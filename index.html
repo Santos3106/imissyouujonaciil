@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>i miss my jonacil</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: linear-gradient(to right, #ffdada, #ffc3a0);
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      position: relative;
+    }
+
+    .message-box {
+      background-color: white;
+      padding: 40px 30px;
+      border-radius: 25px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      position: relative;
+      z-index: 2;
+      max-width: 500px;
+      animation: fadeIn 2s ease;
+    }
+
+    .message-box h1 {
+      font-size: 1.6rem;
+      color: #ff4d6d;
+      margin: 0;
+      animation: typing 5s steps(60, end), blink-caret .75s step-end infinite;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid #ff4d6d;
+    }
+
+    .message-box p {
+      font-size: 1rem;
+      color: #ff4d6d;
+      margin-top: 10px;
+      animation: fadeIn 4s ease-in;
+    }
+
+    .heart {
+      font-size: 2.5rem;
+      color: #ff4d6d;
+      margin-top: 20px;
+      animation: pulse 1.5s infinite;
+      text-shadow: 0 0 10px #ff4d6d;
+    }
+
+    /* Floating Text: "i miss you" */
+    .floating-text {
+      position: absolute;
+      font-size: 1.2rem;
+      color: #ff4d6d;
+      opacity: 0;
+      animation: floatText 10s linear infinite;
+      font-weight: bold;
+      text-shadow: 0 0 10px rgba(255, 77, 109, 0.4);
+    }
+
+    @keyframes floatText {
+      0% {
+        transform: translateY(100vh) scale(1);
+        opacity: 0;
+      }
+      10% {
+        opacity: 0.8;
+      }
+      50% {
+        transform: translateY(40vh) scale(1.2);
+        opacity: 0.5;
+      }
+      100% {
+        transform: translateY(-10vh) scale(1);
+        opacity: 0;
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    @keyframes blink-caret {
+      0%, 100% { border-color: transparent; }
+      50% { border-color: #ff4d6d; }
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+  </style>
+</head>
+<body>
+  <!-- Floating "i miss you" Texts -->
+  <div class="floating-text" style="left: 5%; animation-delay: 0s;">i miss you</div>
+  <div class="floating-text" style="left: 15%; animation-delay: 2s;">i miss you</div>
+  <div class="floating-text" style="left: 30%; animation-delay: 4s;">i miss you</div>
+  <div class="floating-text" style="left: 45%; animation-delay: 1s;">i miss you</div>
+  <div class="floating-text" style="left: 60%; animation-delay: 3s;">i miss you</div>
+  <div class="floating-text" style="left: 75%; animation-delay: 5s;">i miss you</div>
+  <div class="floating-text" style="left: 90%; animation-delay: 6s;">i miss you</div>
+
+  <div class="message-box">
+    <h1>i miss you so much jonacil kooooo!!</h1>
+    <p>mag kitaa na tayooo pleaseeeeeeeee! 🥺</p>
+    <div class="heart">❤️</div>
+  </div>
+</body>
+</html>
